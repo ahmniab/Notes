@@ -119,6 +119,58 @@ return (
   </Menu>
 ```
 
+# `Collapse`
+
+> The`Collapse` component in Material-UI (MUI) is a transition component used to create smooth, animated expansions and collapses of content. You can use it to toggle the visibility of elements, such as showing more details within a card, expanding a list item, or animating rows in a table.
+
+# `Chip`
+
+> Chips allow users to enter information, mae selections, filter content, or trigger actions.
+
+```tsx
+// MUI Code
+import * as React from 'react';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
+
+export default function BasicChips() {
+  return (
+    <Stack direction="row" spacing={1}>
+      <Chip label="Chip Filled" />
+      <Chip label="Chip Outlined" variant="outlined" />
+    </Stack>
+  );
+}
+```
+
+# `Link`
+
+> The MUI `Link` is a React component that styles and customizes the native HTML `<a>` (anchor) element, integrating it seamlessly with the MUI design system. It allows you to create styled hyperlinks for navigation, with full access to MUI's theming, typography, and styling props.
+
+# `FormControl`
+
+> `FormControl` is a wrapper component in MUI that provides context for form inputs, such as their state, size, and styling.
+
+# `FormHelperText`
+
+> `FormHelperText` is a Material-UI (MUI) component used to display a small block of text below form controls like text fields, select inputs, or checkboxes.
+
+```tsx
+<FormControl error={isError}>
+	<TextField 
+		label="Username"
+		value={username}
+		onChange={(event) => setUsername(event.target.value)}
+		aria-describedby="username-helper-text"
+	/>
+	<FormHelperText id="username-helper-text">
+		{isError ? 'Username must be at least 5 characters long.' : 
+		'Choose a unique username.'}
+	</FormHelperText>
+</FormControl>
+```
+
+
 # NOTE
 **I used AI to help me in this document**
 
@@ -126,4 +178,5 @@ return (
 https://mui.com/material-ui/react-typography/ <br>
 https://m2.material.io/design/typography/the-type-system.html#type-scale <br>
 https://mui.com/system/react-box/ <br>
-https://www.styled-components.com/
+https://www.styled-components.com/ <br>
+https://mui.com/material-ui/react-chip/
